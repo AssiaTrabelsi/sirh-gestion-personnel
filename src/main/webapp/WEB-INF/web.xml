@@ -17,7 +17,7 @@
 	<servlet>
 		<servlet-name>EditerCollaborateurController</servlet-name>
 		<servlet-class>
-			dev.sgp.web.EditerCollaborateurController
+			dev.spg.web.EditerCollaborateurController
 		</servlet-class>
 	</servlet>
 	<servlet-mapping>
