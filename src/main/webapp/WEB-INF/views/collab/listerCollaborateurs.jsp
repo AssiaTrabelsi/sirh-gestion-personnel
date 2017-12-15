@@ -18,16 +18,19 @@
 		<c:forEach var="collab" items="${listeCollaborateurs}">
 			<div class="panel panel-default">
 				<div class="panel-heading">
-					<h3 class="panel-title">${collab.nom}${collab.prenom}</h3>
+					<h3 class="panel-title">${collab.nom}  ${collab.prenom}</h3>
 				</div>
 				<div class="panel-body">
 					<div class="row">
 						<div class="col-sm-4">
-							<img class="img-responsive" style="max-width: 20%;"
+							<img class="img-responsive" style="max-width: 55%;"
 								src="<c:url value = "/images/${collab.photo}"/>">
 						</div>
 						<div class="col-sm-8">
-							<p>klnflgboeghoehgeijfpz</p>
+							<p> <b>Date de naissance:</b>${collab.date_naissance}</p>
+							<p><b>Numéro de sécurité social:</b>${collab.num_secu_sociale}</p>
+							<p><b>Email:</b>${collab.emailPro}</p>
+							<p><b>Date:</b>${collab.dateHeureCreation}</p>
 						</div>
 					</div>
 				</div>

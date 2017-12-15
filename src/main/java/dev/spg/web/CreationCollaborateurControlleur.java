@@ -91,7 +91,7 @@ public class CreationCollaborateurControlleur extends HttpServlet {
 			collab.setNum_secu_sociale("nss");
 			collab.setDateHeureCreation(ZonedDateTime.now());
 			collab.setMatricule(matricule);
-			//collab.setPhoto("./webapp/images/avatar.png");
+			
 			
 			collabService.sauvegarderCollaborateur(collab);
 
