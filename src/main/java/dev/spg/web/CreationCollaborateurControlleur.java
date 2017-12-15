@@ -100,21 +100,21 @@ public class CreationCollaborateurControlleur extends HttpServlet {
 	}
 
 	private void validationNom(String nom) throws Exception {
-		if (nom == null && nom.equals("")) {
+		if (nom != null && nom.equals("")) {
 			throw new Exception("Le champs nom est vide");
 		}
 
 	}
 
 	private void validationPrenom(String prenom) throws Exception {
-		if (prenom == null && prenom.equals("")) {
+		if (prenom != null && prenom.equals("")) {
 			throw new Exception("Le  champs prenom est vide");
 		}
 
 	}
 
 	private void validationDateNaiss(String dateNaiss) throws Exception {
-		if (dateNaiss == null && dateNaiss.equals("")) {
+		if (dateNaiss != null && dateNaiss.equals("")) {
 			throw new Exception("Le champs de dateNaiss est vide");
 		}
 

@@ -14,12 +14,28 @@ public class Collaborateur {
 	private String photo;
 	private ZonedDateTime dateHeureCreation;
 	public Boolean actif;
+	private String intitulePoste ;
+	private Departement departement ; 
 
 	public Collaborateur() {
 		this.actif = true;
 		this.dateHeureCreation = ZonedDateTime.now();
 		this.photo="avatar.png";
 	}
+	
+	
+
+	public Collaborateur(String nom, String prenom, LocalDate date_naissance, String adresse, String num_secu_sociale) {
+		super();
+		this.nom = nom;
+		this.prenom = prenom;
+		this.date_naissance = date_naissance;
+		this.adresse = adresse;
+		this.num_secu_sociale = num_secu_sociale;
+		
+	}
+
+
 
 	public String getMatricule() {
 		return matricule;
